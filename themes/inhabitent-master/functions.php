@@ -83,7 +83,7 @@ add_filter( 'stylesheet_uri', 'inhabitent_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function inhabitent_starter_scripts() {
-	wp_enqueue_style( 'inhabitent-starter-style', get_stylesheet_directory_uri() . 'themes/inhabitent-master/build/css/style.min.css');
+	wp_enqueue_style( 'inhabitent-starter-style', get_stylesheet_uri());
 	wp_enqueue_style('inhabitent-starter-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
 
 
