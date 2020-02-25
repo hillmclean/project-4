@@ -276,14 +276,14 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather Web", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather Web'; }
+  font-family: "Merriweather Web", sans-serif; }
 
 /* Copy */
 p {
@@ -342,7 +342,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #ffff;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
