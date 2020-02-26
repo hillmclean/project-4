@@ -20,6 +20,26 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+				
+	<?php
+	$args = array( 
+		'post_type' => 'post',
+		'posts_per_page' => 3
+	);
+	$blog_posts = get_posts( $args ); 
+	?>
+
+		<?php foreach($blog_posts as $post): setup_postdata ($post); ?>
+
+		<article>
+				<h2><?php the_title(); ?></h2>
+				<p><?php the_content(); ?></p>
+				<img><?php the_post_thumbnail(); ?>
+		</article>
+
+	<?php endforeach; ?>
+	<?php  wp_reset_postdata(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

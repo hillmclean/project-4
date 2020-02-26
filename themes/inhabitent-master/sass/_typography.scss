@@ -9,12 +9,13 @@ select,
 textarea {
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	font-family: $font__main;
 }
 
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font__main;
+	font-family: $font__secondary;
 	color: $color__brand-pur;
 }
 
@@ -22,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	margin-bottom: $base__space-unit;
+	// font-family: $font__main;
 }
 
 dfn, cite, em, i {
