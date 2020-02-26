@@ -47,7 +47,7 @@ add_action( 'after_setup_theme', 'inhabitent_starter_setup' );
 function inhabitent_starter_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'inhabitent_starter_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'inhabitent_starter_content_width', 0 );
+// add_action( 'after_setup_theme', 'inhabitent_starter_content_width', 0 );
 
 /**
  * Register widget area.
@@ -105,3 +105,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+

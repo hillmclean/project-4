@@ -1,8 +1,10 @@
+
+  
 <?php
 /**
  * The header for our theme.
  *
- * @package Inhabitent_Theme
+ * @package RED_Starter_Theme
  */
 
 ?><!DOCTYPE html>

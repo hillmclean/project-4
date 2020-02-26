@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying front page.
+ * The template for displaying about page.
  *
  * @package Inhabitent_Theme
  */

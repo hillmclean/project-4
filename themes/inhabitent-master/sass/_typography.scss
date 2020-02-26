@@ -7,7 +7,6 @@ button,
 input,
 select,
 textarea {
-	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
 }
@@ -15,7 +14,7 @@ textarea {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font__main;
+	font-family: sans-serif;
 }
 
 /* Copy */
