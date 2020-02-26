@@ -15,16 +15,18 @@ get_header(); ?>
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+					<?php if( get_field('image') ): ?>
+				<img src="<?php the_field('image'); ?>" />
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<p>$ <?php the_field('price'); ?></p>
+						<?php endif; ?>
+
 
 			<?php endwhile; ?>
 
