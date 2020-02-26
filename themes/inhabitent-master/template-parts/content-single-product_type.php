@@ -14,10 +14,9 @@
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<p>$ <?php the_field('price'); ?></p>
 
-		<div class="entry-meta">
-			<?php inhabitent_starter_posted_on(); ?> / <?php inhabitent_starter_comment_count(); ?> / <?php inhabitent_starter_posted_by(); ?>
-		</div>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
