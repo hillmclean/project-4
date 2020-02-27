@@ -6,6 +6,9 @@
 
 a {
 	color: $color__brand-gre;
+	padding-right: 1rem;
+	font-family: $font__secondary;
+	text-transform: uppercase;
 
 	// &:visited {
 	// 	color: $color__link-visited;
@@ -13,7 +16,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__brand-pur;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -27,10 +30,11 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	width: 100%;
+	height: 50px;
 
 	ul {
 		display: none;
