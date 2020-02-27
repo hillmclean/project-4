@@ -4,11 +4,9 @@
 
 /* Front page */
 
-.front-header-wrap {
+/* Default Pages */
+
+.site-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  flex-direction: row;
 }

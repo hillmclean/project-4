@@ -694,6 +694,19 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Default Pages */
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.inhabitent-logo {
+  height: 30px; }
+
 .front-header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -709,5 +722,6 @@ object {
   -o-object-fit: cover;
      object-fit: cover; }
 
-.inhabitent-logo {
-  height: 30px; }
+.site-footer {
+  height: 25vw;
+  background-image: url("../dark-wood@2x.png"); }
