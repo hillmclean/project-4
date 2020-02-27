@@ -12,10 +12,18 @@ get_header(); ?>
 
 
 			<?php while ( have_posts() ) : the_post(); ?>
+			
+
 			 	<?php if ( has_post_thumbnail() ) {
-					the_post_thumbnail();
-					}  
-					?>
+										$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full");
+									}  
+									?>
+				 
+					<div class="front-header-wrap" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover;">
+						 <header class="entry-header">
+								 <img class="inhabitent-large-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-full.svg" alt="Inhabitent Logo" />
+						 </header>
+					</div> 
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
