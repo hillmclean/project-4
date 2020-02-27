@@ -283,7 +283,8 @@ textarea {
 /* Headings */
 h1, h2, h4, h5, h6 {
   font-family: "Novecento Sans Web", serif;
-  color: #2f1339; }
+  color: #2f1339;
+  text-transform: uppercase; }
 
 h3 {
   font-family: "Novecento Sans Web", serif;
