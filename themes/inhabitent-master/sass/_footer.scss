@@ -1,4 +1,11 @@
 .site-footer {
-  height: 25vw;
+  height: 200px;
   background-image: url('../dark-wood@2x.png');
+}
+
+.contact-info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: $color__background-screen;
 }

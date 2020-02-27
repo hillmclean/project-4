@@ -281,9 +281,14 @@ textarea {
   font-family: "Merriweather Web", sans-serif; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-family: "Novecento Sans Web", serif;
   color: #2f1339; }
+
+h3 {
+  font-family: "Novecento Sans Web", serif;
+  color: #d99054;
+  text-transform: uppercase; }
 
 /* Copy */
 p {
@@ -723,5 +728,11 @@ object {
      object-fit: cover; }
 
 .site-footer {
-  height: 25vw;
+  height: 200px;
   background-image: url("../dark-wood@2x.png"); }
+
+.contact-info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #f1f1f1; }
