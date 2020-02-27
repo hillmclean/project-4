@@ -21,11 +21,11 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<a href="<?php get_permalink(get_page_by_title( 'products' ) ); ?>">
+			<a href="<?php the_permalink()?>" <?php the_title(); ?>>
 					<?php if( get_field('image') ): ?>
-							<img src="<?php the_field('image'); ?>" />
+							<img src="<?php the_field('image'); ?>" /></a>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-							<p>$ <?php the_field('price'); ?></p></a>
+							<p>$ <?php the_field('price'); ?></p>
 			
 					<?php endif; ?>
 
