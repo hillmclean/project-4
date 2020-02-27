@@ -30,7 +30,7 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="inhabitent-logo">
-						<img src="../themes/inhabitent-master/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
+						<img src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
