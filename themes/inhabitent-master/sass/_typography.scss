@@ -33,6 +33,16 @@ p {
 	// font-family: $font__main;
 }
 
+a {
+	color: $color__brand-gre;
+	font-family: $font__secondary;
+	text-transform: uppercase;
+
+	ul {
+		font-family: $font__main;
+	}
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }

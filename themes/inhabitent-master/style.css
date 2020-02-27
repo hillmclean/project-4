@@ -295,6 +295,13 @@ h3 {
 p {
   margin-bottom: 1.5rem; }
 
+a {
+  color: #248A83;
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase; }
+  a ul {
+    font-family: "Merriweather Web", sans-serif; }
+
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -468,10 +475,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248A83;
-  padding-right: 1rem;
-  font-family: "Novecento Sans Web", serif;
-  text-transform: uppercase; }
+  padding-right: 1rem; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
   a:focus {
@@ -597,6 +601,18 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.widget-area {
+  width: 25%;
+  padding: 5rem;
+  border-left: solid 5px black; }
+
+.widget-area {
+  list-style: none;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Content
