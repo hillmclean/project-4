@@ -6,16 +6,16 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   Contact-Info-Widget
+ * @package   Social-Info-Widget
  * @author    Hillary <hilldmc@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
  * @copyright 2020 Hillary McLean
  *
  * @wordpress-plugin
- * Plugin Name:       Contact Info Widget
+ * Plugin Name:       Social Info Widget
  * Plugin URI:        Contact_Info
- * Description:       A plugin for displaying contact info.
+ * Description:       A plugin for displaying social media info.
  * Version:           1.0.0
  * Author:            Hillary McLean
  * Author URI:        http://Hillary.me
@@ -29,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class Contact_info_widget extends WP_Widget {
+class Social_info_widget extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -40,7 +40,7 @@ class Contact_info_widget extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'contact-info';
+    protected $widget_slug = 'social-info';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -54,10 +54,10 @@ class Contact_info_widget extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Contact Info',
+			'Social Info',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Display the contact info using this widget.'
+				'description' => 'Display the social media info using this widget.'
 			)
 		);
 
@@ -98,9 +98,12 @@ class Contact_info_widget extends WP_Widget {
 
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
-		$telNumber = empty( $instance['telNumber'] ) ? '' : apply_filters( 'telNumber', $instance['telNumber'] );
 		$email = empty( $instance['email'] ) ? '' : apply_filters( 'email', $instance['email'] );
-		$address = empty( $instance['address'] ) ? '' : apply_filters( 'address', $instance['address'] );
+		$telNumber = empty( $instance['telNumber'] ) ? '' : apply_filters( 'telNumber', $instance['telNumber'] );
+		$facebook = empty( $instance['facebook'] ) ? '' : apply_filters( 'facebook', $instance['facebook'] );
+		$twitter = empty( $instance['twitter'] ) ? '' : apply_filters( 'twitter', $instance['twitter'] );
+		$google = empty( $instance['google'] ) ? '' : apply_filters( 'google', $instance['google'] );
+
 
 		// TODO: other fields go here...
 
@@ -131,9 +134,11 @@ class Contact_info_widget extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['telNumber'] = strip_tags( $new_instance['telNumber'] );
 		$instance['email'] = strip_tags( $new_instance['email'] );
-		$instance['address'] = strip_tags( $new_instance['address'] );
+		$instance['telNumber'] = strip_tags( $new_instance['telNumber'] );
+		$instance['facebook'] = strip_tags( $new_instance['facebook'] );
+		$instance['twitter'] = strip_tags( $new_instance['twitter'] );
+		$instance['google'] = strip_tags( $new_instance['google'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -152,16 +157,20 @@ class Contact_info_widget extends WP_Widget {
 			(array) $instance,
 			array(
 				'title' => 'Contact Info',
-				'telNumber' => '',
 				'email' => '',
-				'address' => '',
+				'telNumber' => '',
+				'facebook' => '',
+				'twitter' => '',
+				'google' => '',
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$telNumber = strip_tags( $instance['telNumber'] );
-		$email= strip_tags( $instance['email'] );
-		$address = strip_tags( $instance['address'] );
+		$email = strip_tags( $instance['email'] );
+		$telNumber= strip_tags( $instance['telNumber'] );
+		$facebook = strip_tags( $instance['facebook'] );
+		$twitter= strip_tags( $instance['twitter'] );
+		$google = strip_tags( $instance['google'] );
 
 
 		// TODO: Store the rest of values of the widget in their own variables
@@ -175,5 +184,5 @@ class Contact_info_widget extends WP_Widget {
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function() {
-     register_widget( 'Contact_info_widget' );
+     register_widget( 'Social_info_widget' );
 });
