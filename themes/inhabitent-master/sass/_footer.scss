@@ -1,15 +1,18 @@
 
   .site-footer {
+    background-image: url('../dark-wood@2x.png');
+  }
+  
+  .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    align-items: flex-start;
+    padding: 50px 80px 50px 80px;
     height: 300px;
-    background-image: url('../dark-wood@2x.png');
+    max-width: $width__fixed;
+    margin: 0 auto;
   }
-
 
 .contact-info {
   padding-top: 10px;
@@ -17,6 +20,15 @@
 }
 
 .inhabitent-logo-text {
-  width: 280px;
-  padding-right: 50px;
+  max-width: 300px;
+}
+
+.site-info {
+  padding: 20px;
+  p {
+    color: white;
+    text-align: center;
+    font-family: $font__secondary;
+    text-transform: uppercase;
+  }
 }
