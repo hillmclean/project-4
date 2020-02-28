@@ -1,5 +1,5 @@
 <!-- This file is used to markup the public-facing widget. -->
-
+<div class="social-widget-footer">
 <p>
   <?php if (strlen($email) > 0) : ?> 
     <i class="fas fa-envelope"></i><?php echo $email; ?>
@@ -38,6 +38,8 @@
   </li>
 
 </ul>
+
+</div> 
 
 
 

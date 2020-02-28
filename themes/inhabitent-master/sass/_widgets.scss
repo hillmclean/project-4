@@ -29,3 +29,46 @@
 	padding: 0px;
 	text-decoration: none;
 }
+
+// footer widget
+.social-widget-footer {
+	padding-right: 4rem;
+}
+
+.footer-widget-title {
+	margin-top: 0px;
+}
+
+.widget-area-footer {
+  display: flex;
+	flex-direction: row;
+	max-width: $width__fixed;
+	padding-bottom: 50px;
+
+	h2 {
+		color: $color__brand-ora;
+	}
+	
+	i {
+		color: $color__background-body;
+		width: 30px;
+		font-size: 20px;
+	}
+
+	p {
+		color: $color__background-body;
+	}
+
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+
+	i {
+		width: 15px;
+	}
+}

@@ -1,11 +1,22 @@
-.site-footer {
-  height: 200px;
-  background-image: url('../dark-wood@2x.png');
-}
+
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    height: 300px;
+    background-image: url('../dark-wood@2x.png');
+  }
+
 
 .contact-info {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
-  color: $color__background-screen;
+}
+
+.inhabitent-logo-text {
+  width: 280px;
+  padding-right: 50px;
 }
