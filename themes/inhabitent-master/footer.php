@@ -10,10 +10,16 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="contact-info">
-					<h3>Contact Info</h3>
-					<p>info@inhabitent.com</p>
-					<p>778-456-7891</p>
+			
+				<?php	
+					if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+						return;
+						}
+				?>
+
+				<div id="secondary" class="widget-area" role="complementary">
+					<?php dynamic_sidebar( 'footer' ); ?>
+				</div><!-- #secondary -->
 
 
 				<div class="site-info">
