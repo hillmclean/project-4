@@ -1,4 +1,3 @@
-
   
 <?php
 /**
@@ -37,12 +36,28 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?><i class="fas fa-search"></i>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
+		
+			<?php while ( have_posts() ) : the_post(); ?>
+			
+			<?php if ( has_post_thumbnail() ) {
+						$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full");
+						}  
+					?>
+				 
+			<div class="front-header-wrap" style="background: url('<?php echo 	$backgroundImg[0]; ?>') no-repeat; background-size: cover;">
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+			</div> 
 
+			<div class="about-entry-content">
+				<?php the_content(); ?>
+				<?php wp_link_pages( array(
+						'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+						'after'  => '</div>',
+						) );
+				?>
+			</div><!-- .entry-content -->
+
+			<?php endwhile; // End of the loop. ?>
 			
 
 			<div id="content" class="site-content">
-			
-
-			<!-- 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-			 -->

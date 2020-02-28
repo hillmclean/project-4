@@ -4,9 +4,24 @@
 
 /* Front page */
 
+.front-site-main {
+  width: 100%;
+}
+
+/* About Page */
+.about-entry-content {
+  max-width: $width__fixed;
+}
+
 /* Default Pages */
+
+.site-main {
+  width: 75%;
+}
 
 .site-content {
   display: flex;
   flex-direction: row;
+  max-width: $width__fixed;
+  margin: 0 auto;
 }

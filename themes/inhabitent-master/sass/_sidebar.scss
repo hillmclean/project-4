@@ -1,0 +1,23 @@
+.sidebar-widget-area {
+  min-width: 25%;
+
+  i {
+    width: 30px;
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: $font__main;
+    text-transform: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+}

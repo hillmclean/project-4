@@ -278,7 +278,8 @@ textarea {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: "Merriweather Web", sans-serif; }
+  font-family: "Merriweather Web", sans-serif;
+  color: #404040; }
 
 /* Headings */
 h1, h2, h4, h5, h6 {
@@ -602,18 +603,6 @@ a {
 .widget_search .search-submit {
   display: none; }
 
-.widget-area {
-  width: 25%;
-  padding: 5rem;
-  border-left: solid 5px black; }
-
-.widget-area {
-  list-style: none;
-  text-align: left;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none; }
-
 .social-widget-footer {
   padding-right: 4rem; }
 
@@ -754,7 +743,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-site-main {
+  width: 100%; }
+
+/* About Page */
+.about-entry-content {
+  max-width: 1120px; }
+
 /* Default Pages */
+.site-main {
+  width: 75%; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,7 +761,9 @@ object {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  max-width: 1120px;
+  margin: 0 auto; }
 
 .inhabitent-logo {
   height: 30px; }
@@ -799,7 +800,7 @@ object {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 50px 80px 50px 80px;
+  padding: 50px 0px 50px 0px;
   height: 300px;
   max-width: 1120px;
   margin: 0 auto; }
@@ -818,3 +819,18 @@ object {
     text-align: center;
     font-family: "Novecento Sans Web", serif;
     text-transform: uppercase; }
+
+.sidebar-widget-area {
+  min-width: 25%; }
+  .sidebar-widget-area i {
+    width: 30px;
+    font-size: 20px; }
+  .sidebar-widget-area a {
+    text-decoration: none;
+    font-family: "Merriweather Web", sans-serif;
+    text-transform: none; }
+  .sidebar-widget-area li {
+    list-style: none; }
+  .sidebar-widget-area ul {
+    margin: 0px;
+    padding: 0px; }

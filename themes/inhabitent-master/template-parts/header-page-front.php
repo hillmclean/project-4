@@ -1,4 +1,3 @@
-
   
 <?php
 /**
@@ -38,11 +37,22 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
+			<?php while ( have_posts() ) : the_post(); ?>
+			
+
+			<?php if ( has_post_thumbnail() ) {
+				 $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full");
+				 }  
+			 ?>
+			
+			 <div class="front-header-wrap" style="background: url('<?php echo 	$backgroundImg[0]; ?>') no-repeat; background-size: cover;">
+					<div class="entry-header">
+							<img class="inhabitent-large-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-full.svg" alt="Inhabitent Logo" />
+				</div>
+			 </div> 
+
+	 <?php endwhile; // End of the loop. ?>
+
 			
 
 			<div id="content" class="site-content">
-			
-
-			<!-- 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-			 -->

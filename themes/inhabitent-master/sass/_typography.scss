@@ -10,6 +10,7 @@ textarea {
 	@include font-size(1);
 	line-height: $font__line-height-body;
 	font-family: $font__main;
+	color: $color__text-main;
 }
 
 /* Headings */
