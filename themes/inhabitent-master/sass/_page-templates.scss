@@ -10,7 +10,12 @@
 
 /* About Page */
 .about-entry-content {
-  max-width: $width__fixed;
+  max-width: 800px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 /* Default Pages */
