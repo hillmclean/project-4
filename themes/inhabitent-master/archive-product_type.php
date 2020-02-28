@@ -10,10 +10,25 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<!-- <?php if ( have_posts() ) : ?> -->
-
 			<header class="shop-header">
 				<h1>Shop Stuff</h2>
+
+				<?php $terms = get_terms( array(
+					'taxonomy'=>'product_taxonomy',
+					"hide_empty" => 0,
+				));
+				if (! empty($terms) && ! is_wp_error($terms)) :
+				?>
+				
+				<div class="product-type-blocks">
+					<?php foreach($terms as $term) : ?>
+						<p><a href="<?php echo get_term_link($term); ?>">
+						<?php echo $term->name ?>
+					</a>
+					</p>
+
+					<?php endforeach; ?>
+					<?php endif; ?>
 			</header><!-- shop-header -->
 
 			<?php
@@ -42,7 +57,6 @@ get_header(); ?>
 <?php wp_reset_postdata(); ?>
 <?php endif;?>
 
-		<!-- <?php endif; ?> -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
