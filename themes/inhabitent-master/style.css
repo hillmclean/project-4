@@ -484,6 +484,16 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+/* Search Bar */
+.fa-search {
+  color: #248A83; }
+
+fieldset {
+  border: none; }
+
+input[type=search] {
+  border: none; }
+
 /* Menus */
 .main-navigation {
   display: -webkit-box;
@@ -528,10 +538,6 @@ a {
     display: block;
     text-decoration: none; }
 
-/* Small menu. */
-.fa-search {
-  color: #248A83; }
-
 .nav-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,6 +553,7 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+/* Small menu. */
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

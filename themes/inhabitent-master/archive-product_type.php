@@ -26,6 +26,7 @@ get_header(); ?>
 						<?php echo $term->name ?>
 					</a>
 					</p>
+				</div>
 
 					<?php endforeach; ?>
 					<?php endif; ?>

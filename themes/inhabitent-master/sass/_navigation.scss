@@ -25,6 +25,20 @@ padding-right: 1rem;
 	}
 }
 
+/* Search Bar */ 
+
+.fa-search {
+	color: $color__brand-gre;
+ }
+
+fieldset {
+	 border: none;
+ }
+
+ input[type=search] {
+	 border: none;
+ }
+ 
 /* Menus */
 
 .main-navigation {
@@ -93,6 +107,13 @@ padding-right: 1rem;
 	}
 }
 
+.nav-search {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+ }
+
 // .current_page_item > a,
 	// .current-menu-item > a,
 	// .current_page_ancestor > a {
@@ -133,16 +154,3 @@ padding-right: 1rem;
 // 		width: 50%;
 // 	}
 // }
-
-// search field
-
-.fa-search {
-	color: $color__brand-gre;
- }
-
- .nav-search {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
- }
