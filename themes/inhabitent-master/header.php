@@ -34,15 +34,25 @@
 						<img class="inhabitent-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
 					</a>
 					</div>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?><i class="fas fa-search"></i>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+					<fieldset>
+						<label>
+							<i class="fa fa-search"></i>
+								<input type="search" class="search-field" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+						</label>
+							<button class="search-submit">
+								<span class="icon-search" aria-hidden="true">
+								</span>
+								<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+							</button>
+					</fieldset>
+				</form>
+
 				</nav><!-- #site-navigation -->
+			
 			</header><!-- #masthead -->
 
-			
-
 			<div id="content" class="site-content">
-			
-
-			<!-- 
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-			 -->
+	

@@ -15,7 +15,7 @@ get_header(); ?>
 
 				<?php $terms = get_terms( array(
 					'taxonomy'=>'product_taxonomy',
-					"hide_empty" => 0,
+					'hide_empty' => 0,
 				));
 				if (! empty($terms) && ! is_wp_error($terms)) :
 				?>

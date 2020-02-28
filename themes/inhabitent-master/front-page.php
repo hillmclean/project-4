@@ -10,6 +10,25 @@ get_template_part( 'template-parts/header', 'page-front' ); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="front-site-main" role="main">
 
+		<h1>Shop Stuff</h2>
+
+<?php $terms = get_terms( array(
+	'taxonomy'=>'product_taxonomy',
+	'hide_empty' => 0,
+));
+if (! empty($terms) && ! is_wp_error($terms)) :
+?>
+
+<div class="product-type-blocks">
+	<?php foreach($terms as $term) : ?>
+		<p><a href="<?php echo get_term_link($term); ?>">
+		<?php echo $term->name ?>
+	</a>
+	</p>
+
+	<?php endforeach; ?>
+	<?php endif; ?>
+
 				
 	<?php
 	$args = array( 
