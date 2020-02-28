@@ -139,3 +139,10 @@ padding-right: 1rem;
 .fa-search {
 	color: $color__brand-gre;
  }
+
+ .nav-search {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+ }
