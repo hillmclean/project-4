@@ -12,20 +12,23 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-				?>
-			</header><!-- .page-header -->
+			<header class="shop-header">
+				<h1>Shop Stuff</h2>
+			</header><!-- shop-header -->
+
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<a href="<?php the_permalink()?>" <?php the_title(); ?>>
+			<div class="product-item">
+
+				<a href="<?php the_permalink()?>" <?php the_title(); ?>>
 					<?php if( get_field('image') ): ?>
-							<img src="<?php the_field('image'); ?>" /></a>
+						<img src="<?php the_field('image'); ?>" />
+				</a>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-							<p>$ <?php the_field('price'); ?></p>
+						<p>$ <?php the_field('price'); ?></p>
+			</div>
 			
 					<?php endif; ?>
 
@@ -43,5 +46,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

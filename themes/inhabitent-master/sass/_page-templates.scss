@@ -22,11 +22,11 @@
 
 .site-main {
   width: 75%;
+  margin: 0 auto;
 }
 
 .site-content {
   display: flex;
   flex-direction: row;
   max-width: $width__fixed;
-  margin: 0 auto;
 }
