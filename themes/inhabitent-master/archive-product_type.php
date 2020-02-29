@@ -32,32 +32,35 @@ get_header(); ?>
 					<?php endif; ?>
 			</header><!-- shop-header -->
 
-			<?php
+	<?php
 	$args = array( 
 		'post_type' => 'product_type',
 		'posts_per_page' => 16
 	);
-	// $productItem = get_posts( $args );
 	$products = new WP_Query($args);
 	?>
 
-<?php if ( $products->have_posts() ) : ?>
-	 <?php while ( $products->have_posts() ) : $products->the_post(); ?>
-	 <div class="product-item">
+	<div class="product-grid">
+		<?php if ( $products->have_posts() ) : ?>
+	 	<?php while ( $products->have_posts() ) : $products->the_post(); ?>
+			 
+		<div class="product-item">
 
-<a href="<?php the_permalink()?>" <?php the_title(); ?>>
-	<?php if( get_field('image') ): ?>
-		<img src="<?php the_field('image'); ?>" />
-	<?php endif; ?>
-</a>
-	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<p>$ <?php the_field('price'); ?></p>
-</div>
+			<a href="<?php the_permalink()?>" <?php the_title(); ?>>
+			<?php if( get_field('image') ): ?>
+			<img src="<?php the_field('image'); ?>" />
+			<?php endif; ?>
+			</a>
 
-<?php endwhile; ?>
-<?php wp_reset_postdata(); ?>
-<?php endif;?>
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<p>$ <?php the_field('price'); ?></p>
+		</div>
 
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
+		<?php endif;?>
+	
+	</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
