@@ -49,9 +49,8 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 				<div class="journal-teaser">
 					<img class="journal-teaser-img"><?php the_post_thumbnail(); ?>
 					<p><?php inhabitent_starter_posted_on(); ?> / <?php comments_number(); ?></p>
-					<p><?php comments_number(); ?></p>
 					<h2><?php the_title(); ?></h2>
-					<button>Read Entry</button>
+					<button class="journal-button"><p class="button-text">Read Entry</p></button>
 				</div>
 
 			<?php endforeach; ?>

@@ -68,6 +68,7 @@
   margin-left:auto;
   margin-right: auto;
   width: $width__fixed;
+  margin-bottom: 5rem;
 }
 
 .journal-teaser {
@@ -76,7 +77,36 @@
   border-bottom: $border__solid;
   border-left: $border__solid;
   margin: 10px;
-  text-align: center;
+  text-align: left;
+
+  h2 {
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: $color__brand-gre;
+  }
+
+  p {
+    padding-left: 8px;
+  }
+}
+
+.journal-button {
+  margin-left: 8px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 0px;
+  background: $color__background-body;
+  box-shadow: none;
+  padding: 0px;
+
+  p {
+    color: black;
+    font-family: $font__secondary;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 8px 8px;
+  }
 }
 
 /* About Page */
