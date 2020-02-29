@@ -40,13 +40,10 @@ fieldset {
 	 border: none;
  }
 
- .search-field {
-	 display: none;
- }
-
  .search-animation {
 	 color: blue;
 	 transition-property: color;
+	 display: flex;
  }
  
 /* Menus */

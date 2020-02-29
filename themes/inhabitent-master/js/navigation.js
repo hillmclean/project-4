@@ -11,7 +11,7 @@ const searchIcon = document.querySelector('.fa-search')
 
 searchIcon.addEventListener('click', function () {
   const searchBar = document.getElementsByClassName('search-field');
-  searchBar[0].classList.add('.search-animation');
+  searchBar[0].classList.toggle('.search-animation');
 });
 
 

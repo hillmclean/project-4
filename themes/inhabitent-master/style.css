@@ -496,13 +496,13 @@ fieldset {
 input[type=search] {
   border: none; }
 
-.search-field {
-  display: none; }
-
 .search-animation {
   color: blue;
   -webkit-transition-property: color;
-  transition-property: color; }
+  transition-property: color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /* Menus */
 .main-navigation {
@@ -777,6 +777,8 @@ object {
 /* Front page */
 .front-site-main {
   width: 100%; }
+  .front-site-main h2 {
+    text-align: center; }
 
 /* About Page */
 .about-entry-content {
@@ -798,7 +800,8 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 1120px; }
+  max-width: 1120px;
+  margin: 0 auto; }
 
 .inhabitent-logo {
   height: 30px; }

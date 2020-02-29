@@ -21,10 +21,10 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 
 <div class="product-type-blocks">
 	<?php foreach($terms as $term) : ?>
-		<p><a href="<?php echo get_term_link($term); ?>">
-		<?php echo $term->name ?>
+		<button><a href="<?php echo get_term_link($term); ?>">
+		<?php echo $term->name ?> Stuff
 	</a>
-	</p>
+	</button>
 
 	<?php endforeach; ?>
 	<?php endif; ?>
@@ -41,6 +41,7 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 		<?php foreach($blog_posts as $post): setup_postdata ($post); ?>
 
 		<article>
+				<h1>Inhabitent Journal</h1>
 				<h2><?php the_title(); ?></h2>
 				<p><?php the_content(); ?></p>
 				<img><?php the_post_thumbnail(); ?>
