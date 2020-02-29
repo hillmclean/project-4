@@ -62,6 +62,23 @@
   font-size: 1rem;
 }
 
+.journal-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left:auto;
+  margin-right: auto;
+  width: $width__fixed;
+}
+
+.journal-teaser {
+  border-top: 4px solid #e1e1e1;
+  border-right: $border__solid;
+  border-bottom: $border__solid;
+  border-left: $border__solid;
+  margin: 10px;
+  text-align: center;
+}
+
 /* About Page */
 .about-entry-content {
   max-width: 800px;

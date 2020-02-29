@@ -34,6 +34,8 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 		<?php endif; ?>
 
 	</div>
+
+	<h1 class="front-h1">Inhabitent Journal</h1>
 				
 	<?php
 	$args = array( 
@@ -42,18 +44,19 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 	);
 	$blog_posts = get_posts( $args ); 
 	?>
+		<div class="journal-container">
+			<?php foreach($blog_posts as $post): setup_postdata ($post); ?>
+				<div class="journal-teaser">
+					<img class="journal-teaser-img"><?php the_post_thumbnail(); ?>
+					<p><?php inhabitent_starter_posted_on(); ?> / <?php comments_number(); ?></p>
+					<p><?php comments_number(); ?></p>
+					<h2><?php the_title(); ?></h2>
+					<button>Read Entry</button>
+				</div>
 
-		<?php foreach($blog_posts as $post): setup_postdata ($post); ?>
-
-		<article>
-				<h1 class="front-h1">Inhabitent Journal</h1>
-				<h2><?php the_title(); ?></h2>
-				<p><?php the_content(); ?></p>
-				<img><?php the_post_thumbnail(); ?>
-		</article>
-
-	<?php endforeach; ?>
-	<?php  wp_reset_postdata(); ?>
+			<?php endforeach; ?>
+			<?php  wp_reset_postdata(); ?>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
