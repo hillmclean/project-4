@@ -775,6 +775,12 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.5rem;
+  padding: 2rem 0rem; }
+
 .front-site-main {
   width: 100%; }
   .front-site-main h2 {
@@ -803,7 +809,10 @@ object {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border: 1px solid black;
+  border-top: 4px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
   margin: 10px;
   text-align: center;
   padding: 1rem; }
@@ -812,8 +821,21 @@ object {
   height: 70px; }
 
 .product-type-button {
-  margin-left: 2rem;
-  margin-right: 2rem; }
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border: none;
+  border-radius: 0px;
+  background: #248A83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1rem 0rem; }
+
+.button-text {
+  padding: 0px;
+  text-decoration: none;
+  color: #ffff;
+  text-shadow: none;
+  font-size: 1rem; }
 
 /* About Page */
 .about-entry-content {
