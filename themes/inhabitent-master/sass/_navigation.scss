@@ -29,6 +29,7 @@ padding-right: 1rem;
 
 .fa-search {
 	color: $color__brand-gre;
+	transition-property: color;
  }
 
 fieldset {
@@ -37,6 +38,15 @@ fieldset {
 
  input[type=search] {
 	 border: none;
+ }
+
+ .search-field {
+	 display: none;
+ }
+
+ .search-animation {
+	 color: blue;
+	 transition-property: color;
  }
  
 /* Menus */
