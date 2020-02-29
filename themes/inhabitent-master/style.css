@@ -787,7 +787,33 @@ object {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.product-type-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  padding: 1rem; }
+
+.product-type-img {
+  height: 70px; }
+
+.product-type-button {
+  margin-left: 2rem;
+  margin-right: 2rem; }
 
 /* About Page */
 .about-entry-content {

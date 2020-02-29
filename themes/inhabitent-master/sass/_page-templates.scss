@@ -15,6 +15,28 @@
 .product-type-blocks {
   display: flex;
   flex-direction: row;
+  margin-left:auto;
+  margin-right: auto;
+  width: $width__fixed;
+}
+
+.product-type-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.product-type-img {
+  height: 70px;
+}
+
+.product-type-button {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /* About Page */
