@@ -19,16 +19,21 @@ get_template_part( 'template-parts/header', 'page-front' ); ?>
 if (! empty($terms) && ! is_wp_error($terms)) :
 ?>
 
-<div class="product-type-blocks">
-	<?php foreach($terms as $term) : ?>
-		<button><a href="<?php echo get_term_link($term); ?>">
-		<?php echo $term->name ?> Stuff
-	</a>
-	</button>
 
-	<?php endforeach; ?>
-	<?php endif; ?>
+	<div class="product-type-blocks">
+		<?php foreach($terms as $term) : ?>
+			<div class="product-type-box">
+			<?php echo $term->description ?>
+			<button><a href="<?php echo get_term_link($term); ?>">
+			<?php echo $term->name ?> Stuff
+		</a>
+		</button>
+		</div>
 
+		<?php endforeach; ?>
+		<?php endif; ?>
+
+	</div>
 				
 	<?php
 	$args = array( 

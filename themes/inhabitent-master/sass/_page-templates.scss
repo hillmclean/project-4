@@ -12,6 +12,11 @@
   }
 }
 
+.product-type-blocks {
+  display: flex;
+  flex-direction: row;
+}
+
 /* About Page */
 .about-entry-content {
   max-width: 800px;
