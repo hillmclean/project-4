@@ -23,6 +23,8 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 	<div class="product-type-blocks">
 		<?php foreach($terms as $term) : ?>
 			<div class="product-type-box">
+			<img class="product-type-img" src="<?php echo get_template_directory_uri(); ?>/product-type-icons/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
+			<?php echo $term->name .svg ?>
 			<?php echo $term->description ?>
 			<button><a href="<?php echo get_term_link($term); ?>">
 			<?php echo $term->name ?> Stuff
