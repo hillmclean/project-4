@@ -18,8 +18,8 @@
 		<div class="journal-img" style="background: url('<?php echo $journalImg[0]; ?>') no-repeat; background-size: cover;">
 	
 				<div class="journal-title">
-						<a href="<?php the_permalink()?>" <?php the_title(); ?>>
-						<h2><?php the_title() ?><h2>
+						<a href="<?php the_permalink()?>">
+						<h2><?php the_title() ?></h2>
 						</a>
 				</div>
 
