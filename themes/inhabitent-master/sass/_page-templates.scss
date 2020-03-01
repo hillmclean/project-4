@@ -75,32 +75,47 @@
   border: $border__solid;
   margin: 10px;
   text-align: left;
-  height: 500px;
 
   h2 {
     text-align: left;
-    padding-left: 8px;
     padding-right: 8px;
     color: $color__brand-gre;
+    margin-top: 0px;
+    font-size: 1.4rem;
   }
 
   p {
-    padding-left: 8px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
+.journal-teaser-img {
+  height: 25vh;
+}
+
 .journal-teaser-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   border-top:  4px solid #e1e1e1;
+  padding: 1rem;
+
+  a {
+    padding: 0px;
+  }
 }
 
 .journal-button {
-  margin-left: 8px;
-  margin-bottom: 10px;
   border: 1px solid black;
   border-radius: 0px;
   background: $color__background-body;
   box-shadow: none;
   padding: 10px;
+  width: 180px;
 
   a {
     color: black;

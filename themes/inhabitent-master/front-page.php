@@ -56,7 +56,7 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 						$journalImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), "full");} ?>
 			
 			<div class="journal-teaser">
-					<div class="journal-img" style="background: url('<?php echo $journalImg[0]; ?>') no-repeat; background-size: cover;">
+					<div class="journal-teaser-img" style="background: url('<?php echo $journalImg[0]; ?>') no-repeat; background-size: cover;">
 					</div>
 				
 					<div class="journal-teaser-info">

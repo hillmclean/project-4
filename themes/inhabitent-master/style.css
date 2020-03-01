@@ -848,28 +848,45 @@ object {
 .journal-teaser {
   border: 1px solid #e1e1e1;
   margin: 10px;
-  text-align: left;
-  height: 500px; }
+  text-align: left; }
   .journal-teaser h2 {
     text-align: left;
-    padding-left: 8px;
     padding-right: 8px;
-    color: #248A83; }
+    color: #248A83;
+    margin-top: 0px;
+    font-size: 1.4rem; }
   .journal-teaser p {
-    padding-left: 8px; }
+    margin-bottom: 10px; }
+  .journal-teaser a {
+    text-decoration: none; }
+
+.journal-teaser-img {
+  height: 25vh; }
 
 .journal-teaser-info {
-  border-top: 4px solid #e1e1e1; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-top: 4px solid #e1e1e1;
+  padding: 1rem; }
+  .journal-teaser-info a {
+    padding: 0px; }
 
 .journal-button {
-  margin-left: 8px;
-  margin-bottom: 10px;
   border: 1px solid black;
   border-radius: 0px;
   background: #ffff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 10px; }
+  padding: 10px;
+  width: 180px; }
   .journal-button a {
     color: black;
     font-family: "Novecento Sans Web", serif;
