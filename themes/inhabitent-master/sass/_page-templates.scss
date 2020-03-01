@@ -72,10 +72,7 @@
 }
 
 .journal-teaser {
-  border-top: 4px solid #e1e1e1;
-  border-right: $border__solid;
-  border-bottom: $border__solid;
-  border-left: $border__solid;
+  border: $border__solid;
   margin: 10px;
   text-align: left;
 
@@ -89,6 +86,10 @@
   p {
     padding-left: 8px;
   }
+}
+
+.journal-teaser-info {
+  border-top:  4px solid #e1e1e1;
 }
 
 .journal-button {
@@ -122,7 +123,6 @@
 /* Default Pages */
 
 .site-main {
-  width: 75%;
   margin: 0 auto;
 }
 
@@ -131,7 +131,10 @@
   flex-direction: row;
   max-width: $width__fixed;
   margin: 0 auto;
+}
 
+.site-header {
+  border-bottom: $border__solid;
 }
 
 /* Main Shop Page */
@@ -139,4 +142,64 @@
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 0px;
+  margin-bottom: 2rem;
+  width: $width__fixed;
+}
+
+.product-item {
+  border: $border__solid;
+}
+
+.product-img-box {
+  height: 25vh;
+  border-bottom: 4px solid #e1e1e1
+}
+
+.product-info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 15px;
+
+  p {
+    margin: 0px;
+  }
+}
+
+.product-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25%;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+.content-area {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.shop-header-text {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.shop-header {
+  text-align: center;
+  border-bottom: $border__dashed;
+  margin-bottom: 3rem;
+  padding: 1rem 0rem;
 }

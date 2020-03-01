@@ -45,12 +45,15 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 	$blog_posts = get_posts( $args ); 
 	?>
 		<div class="journal-container">
+			
 			<?php foreach($blog_posts as $post): setup_postdata ($post); ?>
 				<div class="journal-teaser">
 					<img class="journal-teaser-img"><?php the_post_thumbnail(); ?>
-					<p><?php inhabitent_starter_posted_on(); ?> / <?php comments_number(); ?></p>
-					<h2><?php the_title(); ?></h2>
-					<button class="journal-button"><p class="button-text">Read Entry</p></button>
+					<div class="journal-teaser-info">
+						<p><?php inhabitent_starter_posted_on(); ?> / <?php comments_number(); ?></p>
+						<h2><?php the_title(); ?></h2>
+						<button class="journal-button"><p class="button-text">Read Entry</p></button>
+					</div>
 				</div>
 
 			<?php endforeach; ?>

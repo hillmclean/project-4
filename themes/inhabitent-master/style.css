@@ -846,10 +846,7 @@ object {
   margin-bottom: 5rem; }
 
 .journal-teaser {
-  border-top: 4px solid #e1e1e1;
-  border-right: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
-  border-left: 1px solid #e1e1e1;
+  border: 1px solid #e1e1e1;
   margin: 10px;
   text-align: left; }
   .journal-teaser h2 {
@@ -859,6 +856,9 @@ object {
     color: #248A83; }
   .journal-teaser p {
     padding-left: 8px; }
+
+.journal-teaser-info {
+  border-top: 4px solid #e1e1e1; }
 
 .journal-button {
   margin-left: 8px;
@@ -885,7 +885,6 @@ object {
 
 /* Default Pages */
 .site-main {
-  width: 75%;
   margin: 0 auto; }
 
 .site-content {
@@ -899,10 +898,79 @@ object {
   max-width: 1120px;
   margin: 0 auto; }
 
+.site-header {
+  border-bottom: 1px solid #e1e1e1; }
+
 /* Main Shop Page */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 0px;
+  margin-bottom: 2rem;
+  width: 1120px; }
+
+.product-item {
+  border: 1px solid #e1e1e1; }
+
+.product-img-box {
+  height: 25vh;
+  border-bottom: 4px solid #e1e1e1; }
+
+.product-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 15px; }
+  .product-info-box p {
+    margin: 0px; }
+
+.product-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+  margin: 0 auto; }
+  .product-type a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0px; }
+
+.content-area {
+  padding: 0px;
+  margin: 0px;
+  width: 100%; }
+
+.shop-header-text {
+  font-size: 2.5rem;
+  margin-bottom: 1rem; }
+
+.shop-header {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  padding: 1rem 0rem; }
 
 .inhabitent-logo {
   height: 30px; }
