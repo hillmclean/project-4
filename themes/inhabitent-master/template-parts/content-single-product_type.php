@@ -11,10 +11,9 @@
 <div class="shop-item-container">
 
 		<?php if( get_field('image') ): ?>
-			<div class="single-product-img">
-				<img src="<?php the_field('image'); ?>" />
-			</div>
+			<div class="single-product-img" style="background: url('<?php echo the_field('image'); ?>') no-repeat center; background-size: cover; " >
 		<?php endif; ?>
+		</div>
 
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
@@ -22,8 +21,8 @@
 
 		<div class="entry-content">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<p>$ <?php the_field('price'); ?></p>
-		<?php the_content(); ?>
+		<p class="single-price">$ <?php the_field('price'); ?></p>
+		<p class="single-product-content"><?php the_content(); ?></p>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),

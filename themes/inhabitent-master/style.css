@@ -974,7 +974,19 @@ object {
 
 .shop-item-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  margin: 3rem 1rem 5rem 1rem; }
+
+.entry-content h1 {
+  font-size: 2.5rem;
+  margin: 1px;
+  color: #d99054; }
+
+.single-price {
+  font-family: "Novecento Sans Web", serif;
+  font-size: 2rem;
+  margin: 1px; }
 
 .inhabitent-logo {
   height: 30px; }
