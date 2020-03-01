@@ -12,6 +12,11 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+	<!-- <div class="map">
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzrok3qRFEJwJ4jHAssO24CB4isaz0PQY&callback=initMap"
+	type="text/javascript"></script>
+</div> -->
+
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

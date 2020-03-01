@@ -1092,9 +1092,10 @@ object {
     text-transform: uppercase; }
 
 .sidebar-widget-area {
-  min-width: 25%;
-  border-left: 1px solid black;
-  padding-left: 2rem; }
+  border-left: 1px solid #e1e1e1;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem; }
   .sidebar-widget-area i {
     width: 30px;
     font-size: 20px; }

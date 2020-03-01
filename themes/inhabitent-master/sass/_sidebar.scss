@@ -1,7 +1,8 @@
 .sidebar-widget-area {
-  min-width: 25%;
-  border-left: 1px solid black;
-  padding-left: 2rem;
+  border-left: $border__solid;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 
   i {
     width: 30px;
