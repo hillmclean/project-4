@@ -884,9 +884,6 @@ object {
     text-align: center; }
 
 /* Default Pages */
-.site-main {
-  margin: 0 auto; }
-
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,7 +892,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 1120px;
+  width: 1120px;
   margin: 0 auto; }
 
 .site-header {
@@ -987,13 +984,6 @@ object {
   font-family: "Novecento Sans Web", serif;
   font-size: 2rem;
   margin: 1px; }
-
-.journal-box {
-  position: relative; }
-
-.journal-title {
-  position: absolute;
-  top: 100px; }
 
 .inhabitent-logo {
   height: 30px; }

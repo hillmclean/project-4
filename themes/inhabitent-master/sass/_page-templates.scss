@@ -122,14 +122,11 @@
 
 /* Default Pages */
 
-.site-main {
-  margin: 0 auto;
-}
 
 .site-content {
   display: flex;
   flex-direction: row;
-  max-width: $width__fixed;
+  width: $width__fixed;
   margin: 0 auto;
 }
 
@@ -229,12 +226,29 @@
 
 // blog front
 
-.journal-box {
-  position: relative;
-}
+// .journal-box {
+//   position: relative;
+// }
 
-.journal-title {
-  position: absolute;
-  top: 100px;
+// .journal-title {
+//   position: absolute;
+//   top: 100px;
+// }
 
-}
+// .journal-meta {
+//   position: absolute;
+//   top: 510px;
+//   right: 0px;
+//   padding-right: 18px;
+//   background: $color__brand-gre;
+//   width: 450px;
+//   margin-left: 20px;
+//   text-align: right;
+
+//   h4 {
+//     color: $color__background-body;
+//     font-weight: normal;
+//     margin: 0px;
+//     padding: 10px;
+//   }
+// }
