@@ -988,6 +988,13 @@ object {
   font-size: 2rem;
   margin: 1px; }
 
+.journal-box {
+  position: relative; }
+
+.journal-title {
+  position: absolute;
+  top: 100px; }
+
 .inhabitent-logo {
   height: 30px; }
 
