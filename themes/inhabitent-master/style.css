@@ -972,6 +972,10 @@ object {
   margin-bottom: 3rem;
   padding: 1rem 0rem; }
 
+.shop-item-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
 .inhabitent-logo {
   height: 30px; }
 
