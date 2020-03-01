@@ -62,7 +62,7 @@
   font-size: 1rem;
 }
 
-.journal-container {
+.journal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-left:auto;
@@ -75,6 +75,7 @@
   border: $border__solid;
   margin: 10px;
   text-align: left;
+  height: 500px;
 
   h2 {
     text-align: left;
@@ -99,9 +100,9 @@
   border-radius: 0px;
   background: $color__background-body;
   box-shadow: none;
-  padding: 0px;
+  padding: 10px;
 
-  p {
+  a {
     color: black;
     font-family: $font__secondary;
     text-transform: uppercase;

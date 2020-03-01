@@ -11,7 +11,6 @@ plugins/*
 !plugins/business-hours-widget/
 !plugins/contact-info-widget/
 !plugins/social-info-widget/
-!plugins/wp-google-maps/
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent-master/

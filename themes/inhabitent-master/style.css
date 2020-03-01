@@ -837,7 +837,7 @@ object {
   text-shadow: none;
   font-size: 1rem; }
 
-.journal-container {
+.journal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-left: auto;
@@ -848,7 +848,8 @@ object {
 .journal-teaser {
   border: 1px solid #e1e1e1;
   margin: 10px;
-  text-align: left; }
+  text-align: left;
+  height: 500px; }
   .journal-teaser h2 {
     text-align: left;
     padding-left: 8px;
@@ -868,8 +869,8 @@ object {
   background: #ffff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 0px; }
-  .journal-button p {
+  padding: 10px; }
+  .journal-button a {
     color: black;
     font-family: "Novecento Sans Web", serif;
     text-transform: uppercase;
