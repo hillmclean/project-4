@@ -201,7 +201,8 @@
 
 .content-area {
   padding: 0px;
-  margin: 0px;
+  margin-right: 5rem;
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -305,4 +306,11 @@
 .search-form-default {
   border: 1px solid black;
   padding: 10px;
+}
+
+// Search Results Page 
+
+.page-header-search {
+    border-bottom: $border__solid;
+
 }
