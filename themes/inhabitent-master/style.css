@@ -1003,6 +1003,14 @@ object {
   .product-info-box p {
     margin: 0px; }
 
+.product-title, .right {
+  float: right;
+  padding: 1px 0.5em; }
+
+.product-title {
+  float: left;
+  clear: both; }
+
 .product-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1037,6 +1045,8 @@ object {
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem;
   padding: 1rem; }
+  .shop-header a {
+    font-size: 1rem; }
 
 .shop-item-container {
   display: grid;
@@ -1053,6 +1063,40 @@ object {
   font-family: "Novecento Sans Web", serif;
   font-size: 2rem;
   margin: 1px; }
+
+.social-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-product-social {
+  border: 1px solid black;
+  border-radius: 0px;
+  background: #ffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px;
+  width: 120px;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 20px; }
+  .single-product-social a {
+    color: black;
+    font-family: "Novecento Sans Web", serif;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 8px 8px; }
+  .single-product-social:hover {
+    background-color: #248A83;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-style: none;
+    text-shadow: none;
+    color: #ffff; }
+
+.social-button {
+  width: 20px; }
 
 .journal-box {
   margin-bottom: 5rem; }

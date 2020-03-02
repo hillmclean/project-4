@@ -57,8 +57,8 @@ get_header(); ?>
 				</a>
 
 			<div class="product-info-box">
-				<p><?php the_title(); ?></p>
-				<p>$ <?php the_field('price'); ?></p>
+				<p class="product-title"><?php the_title(); ?></p>
+				<p class="product-price">$ <?php the_field('price'); ?></p>
 			</div> 
 		</div> <!-- .product-item -->
 
