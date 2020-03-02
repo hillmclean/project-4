@@ -17,20 +17,10 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-	
-	<?php $terms = get_terms( array(
-		'taxonomy'=>'product_taxonomy',
-		'hide_empty' => 0,
-		));
-
-		if (! empty($terms) && ! is_wp_error($terms)) :
-			?>
-		
-
 	<div class="product-grid">
-		<?php foreach($terms as $term): setup_postdata ($term); ?>
-			 
+	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="product-item">
+
 			<?php if( get_field('image') ): ?>
 				<a href="<?php the_permalink()?>" <?php the_title(); ?>>
 					<div class="product-img-box" style="background: url('<?php echo the_field('image'); ?>') no-repeat; background-size: cover;" >
@@ -39,16 +29,16 @@ get_header(); ?>
 				</a>
 
 			<div class="product-info-box">
-				<p><?php the_title(); ?></p>
-				<p>$ <?php the_field('price'); ?></p>
+				<p class="product-title"><?php the_title(); ?></p>
+				<p class="product-price">$ <?php the_field('price'); ?></p>
 			</div> 
+
 		</div> <!-- .product-item -->
 
-		<?php endforeach; ?>
-		<?php endif; ?>
-		<?php wp_reset_postdata(); ?>
+		<?php endwhile; ?>
 
-	
+<?php wp_reset_postdata(); ?>
+
 	</div> <!-- .product-grid -->
 
 		</main><!-- #main -->

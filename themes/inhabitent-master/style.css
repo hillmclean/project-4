@@ -976,10 +976,10 @@ object {
 
 .product-item {
   border: 1px solid #e1e1e1;
-  height: 30vw; }
+  height: 300px; }
 
 .product-img-box {
-  height: 25vw;
+  height: 250px;
   border-bottom: 4px solid #e1e1e1; }
 
 .product-info-box {
