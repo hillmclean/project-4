@@ -1060,6 +1060,22 @@ object {
     margin: 0px;
     padding: 0.8rem; }
 
+.error-404 {
+  margin: 5rem; }
+  .error-404 h1 {
+    margin-top: 0px; }
+  .error-404 ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px; }
+  .error-404 a {
+    text-decoration: none;
+    padding-right: 0px; }
+
+.search-form-default {
+  border: 1px solid black;
+  padding: 10px; }
+
 .inhabitent-logo {
   height: 30px; }
 
