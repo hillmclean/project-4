@@ -299,7 +299,8 @@ p {
 a {
   color: #248A83;
   font-family: "Novecento Sans Web", serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
   a ul {
     font-family: "Merriweather Web", sans-serif; }
 

@@ -21,4 +21,7 @@
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
+
+	<button class="journal-button"><a class="button-text" href="<?php the_permalink()?>">Read More →</a>
+	</button>
 </article><!-- #post-## -->
