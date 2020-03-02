@@ -17,6 +17,17 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+			<?php
+	$args = array( 
+		'post_type' => 'product_type',
+		'posts_per_page' => 16,
+		'order' => 'ASC'
+	);
+	$products = new WP_Query($args);
+	?>
+		
+	
+	
 	<div class="product-grid">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="product-item">
@@ -35,10 +46,8 @@ get_header(); ?>
 
 		</div> <!-- .product-item -->
 
-		<?php endwhile; ?>
-
-<?php wp_reset_postdata(); ?>
-
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
 	</div> <!-- .product-grid -->
 
 		</main><!-- #main -->
