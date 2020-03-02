@@ -5,7 +5,8 @@
 /* Front page */
 
 .front-h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-weight: normal;
   font-size: 2.5rem;
   padding: 2rem 0rem;
@@ -79,10 +80,6 @@
   }
 }
 
-a:hover {
-  color: $color__background-body;
-}
-
 .journal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -128,6 +125,11 @@ a:hover {
   a {
     padding: 0px;
   }
+
+  p {
+    font-size: 14px;
+    margin: 5px 0px 5px 0px;
+  }
 }
 
 .journal-button {
@@ -137,6 +139,7 @@ a:hover {
   box-shadow: none;
   padding: 10px;
   width: 180px;
+  color: black;
 
   a {
     color: black;
@@ -144,6 +147,14 @@ a:hover {
     text-transform: uppercase;
     padding: 0px;
     margin: 8px 8px;
+  }
+
+  &:hover {
+    background-color: $color__brand-gre;
+    box-shadow: none;
+    border-style: none;
+    text-shadow: none;
+    color: $color__background-body;
   }
 }
 

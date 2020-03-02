@@ -7,7 +7,7 @@
 
 get_template_part( 'template-parts/header', 'page-front' ); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area-front">
 		<main id="main" class="front-site-main" role="main">
 
 		<h1 class="front-h1">Shop Stuff</h1>

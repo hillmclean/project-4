@@ -783,7 +783,12 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .front-h1 {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: normal;
   font-size: 2.5rem;
   padding: 2rem 0rem; }
@@ -857,9 +862,6 @@ object {
     color: #ffff;
     text-shadow: none; }
 
-a:hover {
-  color: #ffff; }
-
 .journal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -901,6 +903,9 @@ a:hover {
   padding: 1rem; }
   .journal-teaser-info a {
     padding: 0px; }
+  .journal-teaser-info p {
+    font-size: 14px;
+    margin: 5px 0px 5px 0px; }
 
 .journal-button {
   border: 1px solid black;
@@ -909,13 +914,21 @@ a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 10px;
-  width: 180px; }
+  width: 180px;
+  color: black; }
   .journal-button a {
     color: black;
     font-family: "Novecento Sans Web", serif;
     text-transform: uppercase;
     padding: 0px;
     margin: 8px 8px; }
+  .journal-button:hover {
+    background-color: #248A83;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-style: none;
+    text-shadow: none;
+    color: #ffff; }
 
 /* About Page */
 .about-entry-content {
