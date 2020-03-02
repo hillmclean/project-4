@@ -10,9 +10,12 @@
 const searchIcon = document.querySelector('.search-toggle')
 
 searchIcon.addEventListener('click', function () {
-  const searchBar = document.querySelector('.search-display');
-  searchBar.classList.toggle('search-animation');
-  searchBar.classList.remove('search-display');
+  const search = document.getElementById('search-display');
+  if (search.className === 'search-display') {
+    search.className = 'search-animation';
+  } else {
+    search.className = 'search-display';
+  }
 });
 
 
