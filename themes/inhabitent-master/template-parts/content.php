@@ -35,6 +35,8 @@
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
+	<button class="journal-button"><a class="button-text" href="<?php the_permalink()?>">Read More →</a>
+						</button>
 
 </article><!-- #post-## -->
 
