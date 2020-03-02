@@ -490,19 +490,25 @@ a {
   -webkit-transition-property: color;
   transition-property: color; }
 
+.search-toggle {
+  padding: 0px; }
+
 fieldset {
-  border: none; }
+  border: none;
+  display: inline-block; }
 
 input[type=search] {
   border: none; }
 
-.search-animation {
+.search-display-on {
   -webkit-transition-property: display;
   transition-property: display;
-  display: block; }
-
-.search-display {
   display: none; }
+
+.search-display-off {
+  -webkit-transition-property: display;
+  transition-property: display;
+  display: inline-block; }
 
 /* Menus */
 .main-navigation {

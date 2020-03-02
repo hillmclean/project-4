@@ -32,21 +32,29 @@ padding-right: 1rem;
 	transition-property: color;
  }
 
+
+.search-toggle {
+	padding: 0px;
+}
+ 
+
 fieldset {
 	 border: none;
+	 display: inline-block;
  }
 
  input[type=search] {
 	 border: none;
  }
 
- .search-animation {
-  transition-property: display;
-  display: block;
+ .search-display-on {
+	transition-property: display;
+	display: none;
  }
 
- .search-display {
-	display: none;
+ .search-display-off {
+	transition-property: display;
+	display: inline-block;
  }
  
 /* Menus */

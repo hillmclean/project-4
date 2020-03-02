@@ -37,16 +37,17 @@
 
 					<div class="nav-search">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-					<fieldset>
 					<a href="#" class="search-toggle"><i class="fa fa-search"></i></a>
-						<label id="search-display" class="blah">
+					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+					
+					<fieldset>
+						<label id="search-display" class="search-display-on">
 
 								<input type="search" class="search-field" placeholder="Type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 						</label>
 					</fieldset>
 				</form>
-				</div>
+				</div> <!-- nav-search -->
 
 				</nav><!-- #site-navigation -->
 			
