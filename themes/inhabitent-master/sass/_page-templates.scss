@@ -38,6 +38,10 @@
   margin: 10px;
   text-align: center;
   padding: 1rem;
+
+  &:hover {
+    border-color: $color__brand-ora;   
+  }
 }
 
 .product-type-img {
@@ -52,6 +56,14 @@
   background: $color__brand-gre;
   box-shadow: none;
   padding: 1rem 0rem;
+
+  &:hover {
+    background-color: $color__brand-dgre;
+    background-image: linear-gradient($color__brand-dgre);
+    box-shadow: none;
+    border-style: none;
+    text-shadow: none;
+  }
 }
 
 .button-text {
@@ -60,6 +72,15 @@
   color: $color__background-body;
   text-shadow: none;
   font-size: 1rem;
+
+  &:hover {
+    color: $color__background-body;
+    text-shadow: none;
+  }
+}
+
+a:hover {
+  color: $color__background-body;
 }
 
 .journal-grid {
@@ -148,7 +169,13 @@
 }
 
 .site-header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
   border-bottom: $border__solid;
+  background-color: $color__background-body;
+  opacity: 0.8;
 }
 
 /* Main Shop Page */
@@ -203,7 +230,7 @@
 .content-area {
   padding: 0px;
   margin-right: 5rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
   width: 100%;
 }
 
