@@ -244,15 +244,15 @@
 
 // blog front
 
+.journal-box {
+  margin-bottom: 5rem;
+}
+
 .journal-img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 500px;
-}
-
-.journal-box {
-  margin: 3rem;
 }
 
 .journal-title {
@@ -313,5 +313,12 @@
 
 .page-header-search {
     border-bottom: $border__solid;
-
 }
+
+// Archive 
+
+.page-header-archive {
+  border-bottom: $border__solid;
+  margin-bottom: 2rem;
+}
+

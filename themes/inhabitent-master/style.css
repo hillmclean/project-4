@@ -1011,6 +1011,9 @@ object {
   font-size: 2rem;
   margin: 1px; }
 
+.journal-box {
+  margin-bottom: 5rem; }
+
 .journal-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,9 +1026,6 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 500px; }
-
-.journal-box {
-  margin: 3rem; }
 
 .journal-title {
   display: -webkit-box;
@@ -1080,6 +1080,10 @@ object {
 
 .page-header-search {
   border-bottom: 1px solid #e1e1e1; }
+
+.page-header-archive {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 2rem; }
 
 .inhabitent-logo {
   height: 30px; }
