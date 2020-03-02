@@ -7,11 +7,12 @@
  * Also makes the search bar appear and reappear in the navigation bar
  */
 
-const searchIcon = document.querySelector('.fa-search')
+const searchIcon = document.querySelector('.search-toggle')
 
 searchIcon.addEventListener('click', function () {
-  const searchBar = document.getElementsByClassName('search-field');
-  searchBar[0].classList.toggle('.search-animation');
+  const searchBar = document.querySelector('.search-display');
+  searchBar.classList.toggle('search-animation');
+  searchBar.classList.remove('search-display');
 });
 
 

@@ -37,11 +37,10 @@
 
 					<div class="nav-search">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
 					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 					<fieldset>
-						<label>
-							<i class="fa fa-search"></i>
+					<a href="#" class="search-toggle"><i class="fa fa-search"></i></a>
+						<label class="search-display">
 								<input type="search" class="search-field" placeholder="Type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 						</label>
 					</fieldset>

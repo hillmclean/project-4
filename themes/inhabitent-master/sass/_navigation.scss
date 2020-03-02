@@ -41,9 +41,12 @@ fieldset {
  }
 
  .search-animation {
-	 color: blue;
-	 transition-property: color;
-	 display: flex;
+  transition-property: display;
+  display: block;
+ }
+
+ .search-display {
+	display: none;
  }
  
 /* Menus */
