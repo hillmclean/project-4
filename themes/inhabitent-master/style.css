@@ -725,28 +725,20 @@ input[type=search] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .contact-info-box p {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
+          align-items: center;
+  margin: 16px 0px 24px 0px; }
 
-.contact-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 30px; }
-  .contact-icon i {
-    width: 30px;
-    font-size: 12px; }
+.contact-text {
+  text-align: left;
+  margin: 0px 0px 0px 8px; }
+
+.contact-icon i {
+  text-align: left;
+  width: 30px;
+  font-size: 12px;
+  margin-right: 8px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1393,7 +1385,8 @@ input[type=submit] {
   border-left: 1px solid #e1e1e1;
   padding-left: 2rem;
   padding-top: 3rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin-top: 3rem; }
   .sidebar-widget-area a {
     text-decoration: none;
     font-family: "Merriweather Web", sans-serif;

@@ -75,19 +75,20 @@
 
 .contact-info-box {
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-	p {
-		justify-content: flex-end;
-	}
+	margin: 16px 0px 24px 0px;
+}
+
+.contact-text {
+	text-align: left;
+	margin: 0px 0px 0px 8px;
 }
 
 .contact-icon {
-	display: flex;
-	justify-content: flex-start;
-	width: 30px;
 	i {
+	text-align: left;	
 	width: 30px;
 	font-size: 12px;
+	margin-right: 8px;
 	}
 }
