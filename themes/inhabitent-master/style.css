@@ -305,7 +305,7 @@ a {
   a ul {
     font-family: "Merriweather Web", sans-serif; }
 
-dfn, cite, em, i {
+dfn, em, i {
   font-style: italic; }
 
 blockquote {
@@ -370,7 +370,7 @@ q {
     content: ''; }
 
 hr {
-  background-color: #ccc;
+  background-color: #423d3d;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -488,12 +488,28 @@ a {
 
 /* Search Bar */
 .fa-search {
-  color: #248A83;
-  -webkit-transition-property: color;
-  transition-property: color; }
+  color: #248A83; }
 
 .search-toggle {
-  padding: 0px; }
+  padding: 0px;
+  -webkit-transition-property: display;
+  transition-property: display;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in; }
+
+.search-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase; }
 
 fieldset {
   border: none;
@@ -503,14 +519,28 @@ input[type=search] {
   border: none; }
 
 .search-display-on {
-  -webkit-transition-property: display;
-  transition-property: display;
-  display: none; }
+  -webkit-transition-property: display, opacity;
+  transition-property: display, opacity;
+  display: none;
+  opacity: 0;
+  -webkit-transition-duration: 4s;
+          transition-duration: 4s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear; }
 
 .search-display-off {
-  -webkit-transition-property: display;
-  transition-property: display;
-  display: inline-block; }
+  -webkit-transition-property: display, opacity;
+  transition-property: display, opacity;
+  opacity: 1;
+  display: inline-block;
+  -webkit-transition-duration: 4s;
+          transition-duration: 4s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear; }
 
 /* Menus */
 .main-navigation {
@@ -680,6 +710,33 @@ input[type=search] {
   padding: 0px; }
   .social-icons i {
     width: 15px; }
+
+.contact-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .contact-info-box p {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+
+.contact-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 30px; }
+  .contact-icon i {
+    width: 30px;
+    font-size: 12px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -887,7 +944,7 @@ object {
     text-decoration: none; }
 
 .journal-teaser-img {
-  height: 25vh; }
+  height: 280px; }
 
 .journal-teaser-info {
   display: -webkit-box;
@@ -913,6 +970,8 @@ object {
     font-size: 1.2rem;
     padding: 0px;
     line-height: 1.25; }
+    .journal-teaser-info h2:hover {
+      color: #2f1339; }
 
 .journal-button {
   border: 1px solid black;
@@ -920,15 +979,14 @@ object {
   background: #ffff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding: 10px;
   width: 180px;
   color: black; }
   .journal-button a {
     color: black;
     font-family: "Novecento Sans Web", serif;
     text-transform: uppercase;
-    padding: 0px;
-    margin: 8px 8px; }
+    margin: 8px 8px;
+    width: 180px; }
   .journal-button:hover {
     background-color: #248A83;
     -webkit-box-shadow: none;
@@ -1060,7 +1118,8 @@ object {
 .social-button-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 10px; }
 
 .single-product-social {
   border: 1px solid black;
@@ -1089,7 +1148,7 @@ object {
     color: #ffff; }
 
 .social-button {
-  width: 20px; }
+  width: 30px; }
 
 .journal-box {
   margin-bottom: 5rem; }
@@ -1121,6 +1180,8 @@ object {
     margin: 0px;
     padding: 1rem;
     font-size: 2rem; }
+    .journal-title h2:hover {
+      color: #f0e4d1; }
 
 .journal-meta {
   display: -webkit-box;
@@ -1141,6 +1202,45 @@ object {
     font-weight: normal;
     margin: 0px;
     padding: 0.8rem; }
+
+.comments-title {
+  font-size: 2rem;
+  color: #2f1339; }
+
+.comment-author .fn {
+  font-style: none;
+  font-weight: bold; }
+
+.avatar {
+  border-radius: 100px; }
+
+.comment-list {
+  margin: 0px;
+  padding: 0px; }
+  .comment-list .comment-content {
+    margin-left: 20px; }
+  .comment-list time {
+    color: #808080; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
+  border-bottom: 1px solid #e1e1e1; }
+
+.comment-reply-title {
+  font-size: 1.8rem;
+  color: #404040; }
+
+.comment-form-comment label {
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase; }
+
+.comment-reply-link {
+  font-family: "Merriweather Web", sans-serif;
+  text-transform: none; }
 
 .error-404 {
   margin: 5rem; }
@@ -1164,6 +1264,49 @@ object {
 .page-header-archive {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 2rem; }
+
+.entry-title-contact {
+  font-size: 2.5rem; }
+
+iframe {
+  width: 100%; }
+
+.entry-content h2 {
+  font-size: 2rem;
+  color: #2f1339;
+  text-transform: uppercase; }
+
+.wpcf7-form label {
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 1.2rem; }
+
+.wpcf7-form input {
+  margin-top: 1rem; }
+
+input[type=submit] {
+  border: none;
+  border-radius: 0px;
+  background: #248A83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-shadow: none;
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 10px; }
+  input[type=submit]:hover {
+    background-color: #175854;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#175854));
+    background-image: linear-gradient(#175854);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-style: none;
+    text-shadow: none; }
 
 .inhabitent-logo {
   height: 30px; }
@@ -1222,12 +1365,9 @@ object {
 
 .sidebar-widget-area {
   border-left: 1px solid #e1e1e1;
-  padding-left: 3rem;
+  padding-left: 2rem;
   padding-top: 3rem;
   padding-bottom: 2rem; }
-  .sidebar-widget-area i {
-    width: 30px;
-    font-size: 20px; }
   .sidebar-widget-area a {
     text-decoration: none;
     font-family: "Merriweather Web", sans-serif;

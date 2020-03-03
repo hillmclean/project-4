@@ -13,13 +13,13 @@ get_header(); ?>
 		<header class="shop-header">
 			<h1><?php get_the_archive_title()?></h1>
 			<div class="taxonomy-description"><?php the_archive_description() ?>
-</div>
+			</div>
 			</header><!-- .page-header -->
-
 
 		
 	<div class="product-grid">
-	<?php while ( have_posts() ) : the_post(); ?>
+			<?php if ( have_posts() ) : ?>
+	 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="product-item">
 
 			<?php if( get_field('image') ): ?>
@@ -36,8 +36,10 @@ get_header(); ?>
 
 		</div> <!-- .product-item -->
 
-			<?php endwhile; ?>
-			<?php wp_reset_postdata(); ?>
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
+		<?php endif;?>
+	
 	</div> <!-- .product-grid -->
 
 		</main><!-- #main -->

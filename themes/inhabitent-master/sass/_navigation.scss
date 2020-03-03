@@ -29,12 +29,22 @@ padding-right: 1rem;
 
 .fa-search {
 	color: $color__brand-gre;
-	transition-property: color;
  }
 
 
 .search-toggle {
 	padding: 0px;
+	transition-property: display;
+	transition-duration: 2s;
+  transition-delay: .5s;
+  transition-timing-function: ease-in;
+}
+
+.search-field {
+	display: flex;
+	align-items: flex-end;
+	font-family: $font__secondary;
+	text-transform: uppercase;
 }
  
 
@@ -48,13 +58,22 @@ fieldset {
  }
 
  .search-display-on {
-	transition-property: display;
+	transition-property: display, opacity;
 	display: none;
+	opacity: 0;
+	transition-duration: 4s;
+  transition-delay: .5s; 
+	transition-timing-function: linear;
+	
  }
 
  .search-display-off {
-	transition-property: display;
+	transition-property: display, opacity;
+	opacity: 1;
 	display: inline-block;
+	transition-duration: 4s;
+  transition-delay: .5s; 
+	transition-timing-function: linear;
  }
  
 /* Menus */

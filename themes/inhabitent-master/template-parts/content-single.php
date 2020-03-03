@@ -42,5 +42,17 @@
 
 	<footer class="entry-footer">
 		<?php inhabitent_starter_entry_footer(); ?>
+
+		<div class="social-button-container">
+			<button class="single-product-social"><a class="button-text" href="#"><i class="fab fa-facebook-f social-button"></i>Like</a>
+			</button>
+
+			<button class="single-product-social"><a class="button-text" href="#"><i class="fab fa-twitter social-button"></i>Tweet</a>
+			</button>
+
+			<button class="single-product-social"><a class="button-text" href="#"><i class="fab fa-pinterest social-button"></i>Pin</a>
+			</button>
+
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

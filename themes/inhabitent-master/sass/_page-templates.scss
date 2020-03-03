@@ -112,7 +112,7 @@
 }
 
 .journal-teaser-img {
-  height: 25vh;
+  height: 280px;
 }
 
 .journal-teaser-info {
@@ -136,6 +136,10 @@
     font-size: 1.2rem;
     padding: 0px;
     line-height: 1.25;
+
+    &:hover {
+      color: $color__brand-pur;
+    }
   }
 }
 
@@ -144,7 +148,6 @@
   border-radius: 0px;
   background: $color__background-body;
   box-shadow: none;
-  padding: 10px;
   width: 180px;
   color: black;
 
@@ -152,8 +155,8 @@
     color: black;
     font-family: $font__secondary;
     text-transform: uppercase;
-    padding: 0px;
     margin: 8px 8px;
+    width: 180px;
   }
 
   &:hover {
@@ -307,6 +310,7 @@
 
 .social-button-container {
   display: flex;
+  margin-top: 10px;
 }
 
 .single-product-social {
@@ -340,7 +344,7 @@
 }
 
 .social-button {
-  width: 20px;
+  width: 30px;
 }
 
 
@@ -369,6 +373,10 @@
   margin: 0px;
   padding: 1rem;
   font-size: 2rem;
+
+  &:hover {
+    color: $color__brand-yel;
+  }
   }
 }
 
@@ -386,6 +394,59 @@
     margin: 0px;
     padding: 0.8rem;
   }
+}
+
+.comments-title {
+  font-size: 2rem;
+  color: $color__brand-pur;
+}
+
+.comment-author {
+   .fn {
+      font-style: none;
+      font-weight: bold;
+    }
+  }
+
+.avatar {
+  border-radius: 100px;
+}
+
+.comment-list {
+  margin: 0px;
+  padding: 0px;
+
+  .comment-content {
+    margin-left: 20px;
+    }
+
+  time {
+    color: $color__brand-mgr;
+    }
+}
+
+.comment-body {
+  display: flex;
+  margin: 20px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
+  border-bottom: $border__solid;
+}
+
+.comment-reply-title {
+  font-size: 1.8rem;
+  color:  $color__text-main;
+}
+
+.comment-form-comment {
+  label {
+    font-family: $font__secondary;
+    text-transform: uppercase;
+  }
+}
+
+.comment-reply-link {
+  font-family: $font__main;
+  text-transform: none;
 }
 
 .error-404 {
@@ -425,3 +486,56 @@
   margin-bottom: 2rem;
 }
 
+// Contact Page
+
+.entry-title-contact {
+  font-size: 2.5rem;
+}
+
+iframe {
+  width: 100%;
+}
+
+.entry-content {
+  h2 {
+    font-size: 2rem;
+    color: $color__brand-pur;
+    text-transform: uppercase;
+  }
+}
+
+.wpcf7-form {
+  label {
+    font-family: $font__secondary;
+    text-transform: uppercase;
+    color: $color__brand-pur;
+    font-size: 1.2rem;
+  }
+
+  input {
+    margin-top: 1rem;
+  }
+}
+
+input[type=submit] {
+  border: none;
+  border-radius: 0px;
+  background: $color__brand-gre;
+  box-shadow: none;
+  padding: 1rem 1.5rem;
+  color: white;
+  text-shadow: none;
+  font-family: $font__secondary;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: $color__brand-dgre;
+    background-image: linear-gradient($color__brand-dgre);
+    box-shadow: none;
+    border-style: none;
+    text-shadow: none;
+  }
+}

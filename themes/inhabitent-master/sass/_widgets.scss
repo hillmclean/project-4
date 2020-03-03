@@ -57,3 +57,22 @@
 		width: 15px;
 	}
 }
+
+.contact-info-box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	p {
+		justify-content: flex-end;
+	}
+}
+
+.contact-icon {
+	display: flex;
+	justify-content: flex-start;
+	width: 30px;
+	i {
+	width: 30px;
+	font-size: 12px;
+	}
+}
