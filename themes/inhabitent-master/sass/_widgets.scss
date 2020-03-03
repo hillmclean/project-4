@@ -11,6 +11,21 @@
 	}
 }
 
+.widget_recent_entries {
+	a {
+		font-family: $font__main;
+		text-transform: none;
+		line-height: $font__line-height-body;
+	}
+}
+
+.widget_categories {
+	a {
+		font-family: $font__main;
+		text-transform: none;
+		line-height: $font__line-height-body;
+	}
+}
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;

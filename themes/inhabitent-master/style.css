@@ -669,6 +669,16 @@ input[type=search] {
   .widget select {
     max-width: 100%; }
 
+.widget_recent_entries a {
+  font-family: "Merriweather Web", sans-serif;
+  text-transform: none;
+  line-height: 1.5; }
+
+.widget_categories a {
+  font-family: "Merriweather Web", sans-serif;
+  text-transform: none;
+  line-height: 1.5; }
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
@@ -997,10 +1007,17 @@ object {
 
 /* About Page */
 .about-entry-content {
-  max-width: 800px;
-  margin: 0 auto; }
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem; }
   .about-entry-content h2 {
-    text-align: center; }
+    text-align: center;
+    font-size: 2rem;
+    color: #2f1339; }
+
+.entry-title-about {
+  color: #ffff;
+  font-size: 3rem; }
 
 /* Default Pages */
 .site-content {
@@ -1257,6 +1274,15 @@ object {
 .search-form-default {
   border: 1px solid black;
   padding: 10px; }
+  .search-form-default label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .search-form-default input {
+    margin-left: 10px; }
 
 .page-header-search {
   border-bottom: 1px solid #e1e1e1; }

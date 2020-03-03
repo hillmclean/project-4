@@ -60,8 +60,8 @@
 						}  
 					?>
 				 
-			<div class="front-header-wrap" style="background: url('<?php echo 	$backgroundImg[0]; ?>') no-repeat; background-size: cover;">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+			<div class="front-header-wrap" style="background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url('<?php echo 	$backgroundImg[0]; ?>') no-repeat; background-size: cover;">
+					<h1 class="entry-title-about"><?php the_title(); ?></h1>
 			</div> 
 
 			<div class="about-entry-content">
