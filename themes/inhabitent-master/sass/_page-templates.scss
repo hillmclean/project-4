@@ -270,7 +270,7 @@
 
 .content-area {
   padding: 0px;
-  margin-right: 5rem;
+  margin-right: 2rem;
   margin-top: 5rem;
   width: 100%;
 }
@@ -450,6 +450,20 @@
     text-transform: uppercase;
   }
 }
+.comment-form-author {
+  font-family: $font__secondary;
+  text-transform: uppercase;
+}
+
+.comment-form-url {
+  font-family: $font__secondary;
+  text-transform: uppercase;
+}
+
+.comment-form-email {
+  font-family: $font__secondary;
+  text-transform: uppercase;
+}
 
 .comment-reply-link {
   font-family: $font__main;
@@ -500,6 +514,12 @@
 .page-header-archive {
   border-bottom: $border__solid;
   margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: $font__secondary;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 // Contact Page

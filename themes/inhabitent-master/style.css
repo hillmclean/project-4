@@ -1091,7 +1091,7 @@ object {
 
 .content-area {
   padding: 0px;
-  margin-right: 5rem;
+  margin-right: 2rem;
   margin-top: 5rem;
   width: 100%; }
 
@@ -1247,6 +1247,18 @@ object {
   font-family: "Novecento Sans Web", serif;
   text-transform: uppercase; }
 
+.comment-form-author {
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase; }
+
+.comment-form-url {
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase; }
+
+.comment-form-email {
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase; }
+
 .comment-reply-link {
   font-family: "Merriweather Web", sans-serif;
   text-transform: none; }
@@ -1281,7 +1293,13 @@ object {
 
 .page-header-archive {
   border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .entry-title-contact {
   font-size: 2.5rem; }
