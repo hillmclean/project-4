@@ -61,7 +61,7 @@
 				 }  
 			 ?>
 			
-			 <div class="front-header-wrap" style="background: url('<?php echo 	$backgroundImg[0]; ?>') no-repeat; background-size: cover;">
+			 <div class="front-header-wrap" style="background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url('<?php echo 	$backgroundImg[0]; ?>') no-repeat; background-size: cover;">
 					<div class="entry-header">
 							<img class="inhabitent-large-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-full.svg" alt="Inhabitent Logo" />
 				</div>
