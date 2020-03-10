@@ -43,7 +43,7 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 		<?php
 		$args = array( 
 			'post_type' => 'post',
-			'posts_per_page' => 3
+			'posts_per_page' => 'all'
 		);
 		$blog_posts = get_posts( $args ); 
 		?>
@@ -67,7 +67,7 @@ if (! empty($terms) && ! is_wp_error($terms)) :
 						<button class="journal-button"><a class="button-text" href="<?php the_permalink()?>">Read Entry</a>
 						</button>
 					</div>
-			</div>
+					</div>
 	
 			<?php endforeach; ?>
 			<?php  wp_reset_postdata(); ?>

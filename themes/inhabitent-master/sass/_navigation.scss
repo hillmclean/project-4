@@ -34,10 +34,8 @@ padding-right: 1rem;
 
 .search-toggle {
 	padding: 0px;
-	transition-property: display;
-	transition-duration: 2s;
-  transition-delay: .5s;
-  transition-timing-function: ease-in;
+	transition-property: width, opacity;
+	transition: all 2s ease;
 }
 
 .search-field {
@@ -50,30 +48,24 @@ padding-right: 1rem;
 
 fieldset {
 	 border: none;
-	 display: inline-block;
  }
 
  input[type=search] {
 	 border: none;
  }
 
- .search-display-on {
-	transition-property: display, opacity;
-	display: none;
-	opacity: 0;
-	transition-duration: 4s;
-  transition-delay: .5s; 
-	transition-timing-function: linear;
-	
+ .search-field {
+	opacity: 0; 
+	width: 0px;
+	transition: all  2s linear;  
  }
 
  .search-display-off {
-	transition-property: display, opacity;
+	transition: all  2s linear;  
 	opacity: 1;
-	display: inline-block;
-	transition-duration: 4s;
-  transition-delay: .5s; 
-	transition-timing-function: linear;
+	width: 190px;
+	font-family: $font__secondary;
+	text-transform: uppercase;
  }
  
 /* Menus */

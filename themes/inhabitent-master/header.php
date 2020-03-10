@@ -41,9 +41,9 @@
 					<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 					
 					<fieldset>
-						<label id="search-display" class="search-display-on">
+						<label>
 
-								<input type="search" class="search-field" placeholder="Type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+								<input id="search-display" type="search" class="search-field" placeholder="Type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 						</label>
 					</fieldset>
 				</form>

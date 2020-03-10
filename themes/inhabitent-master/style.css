@@ -492,14 +492,10 @@ a {
 
 .search-toggle {
   padding: 0px;
-  -webkit-transition-property: display;
-  transition-property: display;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in; }
+  -webkit-transition-property: width, opacity;
+  transition-property: width, opacity;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease; }
 
 .search-field {
   display: -webkit-box;
@@ -512,35 +508,24 @@ a {
   text-transform: uppercase; }
 
 fieldset {
-  border: none;
-  display: inline-block; }
+  border: none; }
 
 input[type=search] {
   border: none; }
 
-.search-display-on {
-  -webkit-transition-property: display, opacity;
-  transition-property: display, opacity;
-  display: none;
+.search-field {
   opacity: 0;
-  -webkit-transition-duration: 4s;
-          transition-duration: 4s;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear; }
+  width: 0px;
+  -webkit-transition: all  2s linear;
+  transition: all  2s linear; }
 
 .search-display-off {
-  -webkit-transition-property: display, opacity;
-  transition-property: display, opacity;
+  -webkit-transition: all  2s linear;
+  transition: all  2s linear;
   opacity: 1;
-  display: inline-block;
-  -webkit-transition-duration: 4s;
-          transition-duration: 4s;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear; }
+  width: 190px;
+  font-family: "Novecento Sans Web", serif;
+  text-transform: uppercase; }
 
 /* Menus */
 .main-navigation {

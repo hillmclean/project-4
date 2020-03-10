@@ -5,17 +5,17 @@ This site was built using mainly PHP and the content managment system, WordPress
 ## Technolgy Used
 In this repo, you will find the following files:
 
-HTML/PHP
-CSS/Sass
-JavaScript
-JSON
-Node Modules
-WordPress Plugins
-- Business Hours Widget
-- Contact Form
-- Contact Info Widget
-- Inhabitent Functionality Plugin
-- Social Info Widget
+ - HTML/PHP
+ - CSS/Sass
+ - JavaScript
+ - JSON
+ - Node Modules
+ - WordPress Plugins:
+    - Business Hours Widget
+    - Contact Form
+    - Contact Info Widget
+    - Inhabitent Functionality Plugin
+    - Social Info Widget
 
 ## Personal Learnings
 In the making of this project, I have started to learn the following:

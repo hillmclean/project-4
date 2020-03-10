@@ -51,7 +51,7 @@ get_header(); ?>
 			 
 		<div class="product-item">
 			<?php if( get_field('image') ): ?>
-				<a href="<?php the_permalink()?>" <?php the_title(); ?>>
+				<a href="<?php the_permalink()?>">
 					<div class="product-img-box" style="background: url('<?php echo the_field('image'); ?>') no-repeat; background-size: cover;" >
 			<?php endif; ?>	
 					</div> 
