@@ -31,7 +31,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="inhabitent-logo-box">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="inhabitent-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
+						<img class="inhabitent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
 					</a>
 					</div>
 
@@ -63,7 +63,7 @@
 			
 			 <div class="front-header-wrap" style="background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url('<?php echo 	$backgroundImg[0]; ?>') no-repeat; background-size: cover;">
 					<div class="entry-header">
-							<img class="inhabitent-large-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-full.svg" alt="Inhabitent Logo" />
+							<img class="inhabitent-large-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="Inhabitent Logo" />
 				</div>
 			 </div> 
 

@@ -31,7 +31,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="inhabitent-logo-box">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="inhabitent-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
+						<img class="inhabitent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo" />
 					</a>
 					</div>
 
