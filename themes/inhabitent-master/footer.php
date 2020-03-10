@@ -20,7 +20,7 @@
 							<?php dynamic_sidebar( 'footer' ); ?>
 						</div>
 
-						<img class="inhabitent-logo-text" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo" />
+						<img class="inhabitent-logo-text" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo" />
 
 				</div>
 
